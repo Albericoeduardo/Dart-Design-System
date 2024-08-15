@@ -30,8 +30,14 @@ class MyHomePage extends StatelessWidget {
                 controller: controller1,
                 placeholder: 'Label',
                 password: false,
-                isEnabled: true,
-                hasError: false,
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Esse campo é obrigatório';
+                  } else if (!RegExp(r'^[a-zA-Z]+$').hasMatch(value)) {
+                    return 'Somente letras são permitidas!';
+                  }
+                  return null;
+                }
               ),
             ),
             const SizedBox(height: 20,),
@@ -41,6 +47,12 @@ class MyHomePage extends StatelessWidget {
                 placeholder: 'Label',
                 password: true,
                 suffixIcon: const Icon(Icons.remove_red_eye),
+                validator: (value) {
+                  if (value == null || value.isEmpty) {
+                    return 'Esse campo é obrigatório';
+                  }
+                  return null;
+                }
               ),
             ),
             const SizedBox(height: 20,),
@@ -61,30 +73,6 @@ class MyHomePage extends StatelessWidget {
                 placeholder: 'Label',
                 password: false,
                 isEnabled: false,
-                suffixIcon: const Icon(Icons.remove_red_eye)
-              ),
-            ),
-            const SizedBox(height: 20,),
-            const Text("Error"),
-            const SizedBox(height: 20,),
-            StyledInputField(
-              viewModel: InputTextViewModel(
-                controller: controller3,
-                placeholder: 'Label',
-                password: false,
-                isEnabled: true,
-                hasError: true,
-                errorMsg: 'error'
-              ),
-            ),
-            StyledInputField(
-              viewModel: InputTextViewModel(
-                controller: passwordController3,
-                placeholder: 'Label',
-                password: false,
-                isEnabled: true,
-                hasError: true,
-                errorMsg: 'error',
                 suffixIcon: const Icon(Icons.remove_red_eye)
               ),
             ),
