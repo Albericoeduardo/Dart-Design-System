@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:input_text/DesignSystem/Buttons/ActionButton/action_button.dart';
+import 'package:input_text/DesignSystem/Buttons/ActionButton/action_button_view_model.dart';
 import 'package:input_text/DesignSystem/Buttons/InputText/input_text.dart';
 import 'package:input_text/DesignSystem/Buttons/InputText/input_text_view_model.dart';
 
@@ -75,6 +77,99 @@ class MyHomePage extends StatelessWidget {
                 isEnabled: false,
                 suffixIcon: const Icon(Icons.remove_red_eye)
               ),
+            ),
+            const SizedBox(height: 20,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Column(
+                  children: [
+                    ActionButton(viewModel: 
+                      ActionButtonViewModel(
+                        size: ActionButtonSize.large,
+                        style: ActionButtonStyle.primary,
+                        text: 'Large',
+                        icon: const Icon(Icons.send),
+                      )
+                    ),
+                    const SizedBox(height: 10,),
+                    ActionButton(viewModel: 
+                      ActionButtonViewModel(
+                        size: ActionButtonSize.medium,
+                        style: ActionButtonStyle.primary,
+                        text: 'Medium',
+                        icon: const Icon(Icons.send),
+                      )
+                    ),
+                    const SizedBox(height: 10,),
+                    ActionButton(viewModel: 
+                      ActionButtonViewModel(
+                        size: ActionButtonSize.small,
+                        style: ActionButtonStyle.primary,
+                        text: 'Small',
+                      )
+                    ),
+                  ],
+                ),
+                Column(
+                  children: [
+                    ActionButton(viewModel: 
+                      ActionButtonViewModel(
+                        size: ActionButtonSize.large,
+                        style: ActionButtonStyle.secondary,
+                        text: 'Large',
+                        icon: const Icon(Icons.send),
+                      )
+                    ),
+                    const SizedBox(height: 10,),
+                    ActionButton(viewModel: 
+                      ActionButtonViewModel(
+                        size: ActionButtonSize.medium,
+                        style: ActionButtonStyle.secondary,
+                        text: 'Medium',
+                        icon: const Icon(Icons.send),
+                      )
+                    ),
+                    const SizedBox(height: 10,),
+                    ActionButton(viewModel: 
+                      ActionButtonViewModel(
+                        size: ActionButtonSize.small,
+                        style: ActionButtonStyle.secondary,
+                        text: 'Small',
+                      )
+                    ),
+                  ],
+                ),
+                Column(
+                  children: [
+                    ActionButton(viewModel: 
+                      ActionButtonViewModel(
+                        size: ActionButtonSize.large,
+                        style: ActionButtonStyle.tertiary,
+                        text: 'Large',
+                        icon: const Icon(Icons.send),
+                      )
+                    ),
+                    const SizedBox(height: 10,),
+                    ActionButton(viewModel: 
+                      ActionButtonViewModel(
+                        size: ActionButtonSize.medium,
+                        style: ActionButtonStyle.tertiary,
+                        text: 'Medium',
+                        icon: const Icon(Icons.send),
+                      )
+                    ),
+                    const SizedBox(height: 10,),
+                    ActionButton(viewModel: 
+                      ActionButtonViewModel(
+                        size: ActionButtonSize.small,
+                        style: ActionButtonStyle.tertiary,
+                        text: 'Small',
+                      )
+                    ),
+                  ],
+                ),
+              ],
             ),
           ],
         ),
