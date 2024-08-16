@@ -45,7 +45,7 @@ class ActionButton extends StatelessWidget {
     }
 
     return GestureDetector(
-      onTap: () {},
+      onTap: viewModel.onTap,
       child: Container(
         height: heigth,
         width: width,
