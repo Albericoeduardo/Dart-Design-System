@@ -26,8 +26,8 @@ class ActionButtonPage extends StatelessWidget {
                         size: ActionButtonSize.large,
                         style: ActionButtonStyle.primary,
                         text: 'Large',
-                        icon: const Icon(Icons.send),
-                        onTap: () {}
+                        icon: Icons.navigate_next_outlined,
+                        onPressed: () {}
                       )
                     ),
                     const SizedBox(height: 10,),
@@ -36,8 +36,8 @@ class ActionButtonPage extends StatelessWidget {
                         size: ActionButtonSize.medium,
                         style: ActionButtonStyle.primary,
                         text: 'Medium',
-                        icon: const Icon(Icons.send),
-                        onTap: () {}
+                        icon: Icons.navigate_next_outlined,
+                        onPressed: () {}
                       )
                     ),
                     const SizedBox(height: 10,),
@@ -46,7 +46,7 @@ class ActionButtonPage extends StatelessWidget {
                         size: ActionButtonSize.small,
                         style: ActionButtonStyle.primary,
                         text: 'Small',
-                        onTap: () {}
+                        onPressed: () {}
                       )
                     ),
                   ],
@@ -58,8 +58,8 @@ class ActionButtonPage extends StatelessWidget {
                         size: ActionButtonSize.large,
                         style: ActionButtonStyle.secondary,
                         text: 'Large',
-                        icon: const Icon(Icons.send),
-                        onTap: () {}
+                        icon: Icons.navigate_next_outlined,
+                        onPressed: () {}
                       )
                     ),
                     const SizedBox(height: 10,),
@@ -68,8 +68,8 @@ class ActionButtonPage extends StatelessWidget {
                         size: ActionButtonSize.medium,
                         style: ActionButtonStyle.secondary,
                         text: 'Medium',
-                        icon: const Icon(Icons.send),
-                        onTap: () {}
+                        icon: Icons.navigate_next_outlined,
+                        onPressed: () {}
                       )
                     ),
                     const SizedBox(height: 10,),
@@ -78,7 +78,7 @@ class ActionButtonPage extends StatelessWidget {
                         size: ActionButtonSize.small,
                         style: ActionButtonStyle.secondary,
                         text: 'Small',
-                        onTap: () {}
+                        onPressed: () {}
                       )
                     ),
                   ],
@@ -90,8 +90,8 @@ class ActionButtonPage extends StatelessWidget {
                         size: ActionButtonSize.large,
                         style: ActionButtonStyle.tertiary,
                         text: 'Large',
-                        icon: const Icon(Icons.send),
-                        onTap: () {}
+                        icon: Icons.navigate_next_outlined,
+                        onPressed: () {}
                       )
                     ),
                     const SizedBox(height: 10,),
@@ -100,8 +100,8 @@ class ActionButtonPage extends StatelessWidget {
                         size: ActionButtonSize.medium,
                         style: ActionButtonStyle.tertiary,
                         text: 'Medium',
-                        icon: const Icon(Icons.send),
-                        onTap: () {}
+                        icon: Icons.navigate_next_outlined,
+                        onPressed: () {}
                       )
                     ),
                     const SizedBox(height: 10,),
@@ -110,7 +110,7 @@ class ActionButtonPage extends StatelessWidget {
                         size: ActionButtonSize.small,
                         style: ActionButtonStyle.tertiary,
                         text: 'Small',
-                        onTap: () {}
+                        onPressed: () {}
                       )
                     ),
                   ],

@@ -1,4 +1,5 @@
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 
 const TextStyle heading1Light = TextStyle(
   fontFamily: 'Inter',
@@ -86,22 +87,19 @@ const TextStyle label2Semibold = TextStyle(
 const TextStyle button1Bold = TextStyle(
   fontFamily: 'Inter',
   fontSize: 16,
-  height: 24,
   fontWeight: FontWeight.w700
 );
 
 const TextStyle button2Semibold = TextStyle(
   fontFamily: 'Inter',
   fontSize: 14,
-  height: 24,
   fontWeight: FontWeight.w600
 );
 
 const TextStyle button3Semibold = TextStyle(
   fontFamily: 'Inter',
   fontSize: 12,
-  height: 24,
-  fontWeight: FontWeight.w600
+  fontWeight: FontWeight.w600,
 );
 
 const TextStyle navbarSmallTitle = TextStyle(

@@ -23,9 +23,9 @@ class MyHomePage extends StatelessWidget {
               ActionButtonViewModel(
                 size: ActionButtonSize.large,
                 style: ActionButtonStyle.primary,
-                text: 'Large',
-                icon: const Icon(Icons.next_plan),
-                onTap: () {
+                text: 'Button',
+                icon: Icons.navigate_next_outlined,
+                onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const ActionButtonPage()
@@ -40,9 +40,9 @@ class MyHomePage extends StatelessWidget {
               ActionButtonViewModel(
                 size: ActionButtonSize.large,
                 style: ActionButtonStyle.primary,
-                text: 'Large',
-                icon: const Icon(Icons.next_plan),
-                onTap: () {
+                text: 'Input',
+                icon: Icons.navigate_next_outlined,
+                onPressed: () {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => InputFieldPage()
