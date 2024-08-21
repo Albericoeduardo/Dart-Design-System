@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:input_text/DesignSystem/Buttons/InputText/input_text.dart';
-import 'package:input_text/DesignSystem/Buttons/InputText/input_text_view_model.dart';
+import 'package:input_text/DesignSystem/InputField/input_text.dart';
+import 'package:input_text/DesignSystem/InputField/input_text_view_model.dart';
 
 class InputFieldPage extends StatelessWidget {
   final TextEditingController controller1 = TextEditingController();

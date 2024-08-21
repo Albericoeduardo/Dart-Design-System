@@ -10,8 +10,6 @@ class ActionButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    double width = 128;
-    double heigth = 48;
     double horizontalPadding = 32;
     double verticalPadding = 12;
     double iconSize = 24;
@@ -20,20 +18,14 @@ class ActionButton extends StatelessWidget {
 
     switch (viewModel.size) {
       case ActionButtonSize.large:
-        width = 128;
-        heigth = 48;
         buttonTextStyle = button1Bold;
         iconSize = 24;
         break;
       case ActionButtonSize.medium:
-        width = 128;
-        heigth = 40;
         buttonTextStyle = button2Semibold;
         iconSize = 24;
         break;
       case ActionButtonSize.small:
-        width = 64;
-        heigth = 32;
         buttonTextStyle = button3Semibold;
         iconSize = 16;
         break;
