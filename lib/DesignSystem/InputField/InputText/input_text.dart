@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:input_text/DesignSystem/Buttons/InputText/input_text_view_model.dart';
+import 'package:input_text/DesignSystem/InputField//input_text_view_model.dart';
 
 class StyledInputField extends StatefulWidget {
   final InputTextViewModel viewModel;
