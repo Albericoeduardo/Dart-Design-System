@@ -27,6 +27,7 @@ class ActionButton extends StatelessWidget {
         break;
       case ActionButtonSize.small:
         buttonTextStyle = button3Semibold;
+        horizontalPadding = 16;
         iconSize = 16;
         break;
       default:
