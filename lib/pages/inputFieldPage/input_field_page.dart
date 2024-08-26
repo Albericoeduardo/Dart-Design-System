@@ -23,7 +23,7 @@ class InputFieldPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            StyledInputField(
+            StyledInputField.instantiate(
               viewModel: InputTextViewModel(
                 controller: controller1,
                 placeholder: 'Label',
@@ -39,7 +39,7 @@ class InputFieldPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20,),
-            StyledInputField(
+            StyledInputField.instantiate(
               viewModel: InputTextViewModel(
                 controller: passwordController1,
                 placeholder: 'Label',
@@ -56,7 +56,7 @@ class InputFieldPage extends StatelessWidget {
             const SizedBox(height: 20,),
             const Text("Disabled"),
             const SizedBox(height: 20,),
-            StyledInputField(
+            StyledInputField.instantiate(
               viewModel: InputTextViewModel(
                 controller: controller2,
                 placeholder: 'Label',
@@ -65,7 +65,7 @@ class InputFieldPage extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20,),
-            StyledInputField(
+            StyledInputField.instantiate(
               viewModel: InputTextViewModel(
                 controller: passwordController2,
                 placeholder: 'Label',

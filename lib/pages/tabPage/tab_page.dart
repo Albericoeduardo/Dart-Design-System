@@ -11,7 +11,7 @@ class TabPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Tab page Demo"),
       ),
-      body: TabComponent(
+      body: TabComponent.instantiate(
         tabViewModel: TabViewModel(
           initialIndex: 0
         ),

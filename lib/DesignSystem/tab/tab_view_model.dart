@@ -17,9 +17,5 @@ class TabViewModel {
   final Function(int)? onIndexChanged;
   final int initialIndex;
 
-  TabViewModel._({required this.initialIndex, this.onIndexChanged});
-
-  factory TabViewModel({required int initialIndex, Function(int)? onIndexChanged}) {
-    return TabViewModel._(initialIndex: initialIndex, onIndexChanged: onIndexChanged);
-  }
+  TabViewModel({required this.initialIndex, this.onIndexChanged});
 }

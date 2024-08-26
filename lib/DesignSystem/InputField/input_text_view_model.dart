@@ -9,7 +9,7 @@ class InputTextViewModel {
   final String? Function(String?)? validator;
   final VoidCallback? togglePasswordVisibility;
 
-  InputTextViewModel._({
+  InputTextViewModel({
     required this.controller,
     required this.placeholder,
     required this.password,
@@ -18,24 +18,4 @@ class InputTextViewModel {
     this.validator,
     this.togglePasswordVisibility,
   });
-
-  factory InputTextViewModel({
-    required TextEditingController controller,
-    required String placeholder,
-    required bool password,
-    Widget? suffixIcon,
-    bool isEnabled = true,
-    String? Function(String?)? validator,
-    VoidCallback? togglePasswordVisibility,
-  }) {
-    return InputTextViewModel._(
-      controller: controller,
-      placeholder: placeholder,
-      password: password,
-      suffixIcon: suffixIcon,
-      isEnabled: isEnabled,
-      validator: validator,
-      togglePasswordVisibility: togglePasswordVisibility,
-    );
-  }
 }

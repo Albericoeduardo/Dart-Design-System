@@ -5,14 +5,18 @@ import 'package:input_text/shared/colors.dart';
 class TabComponent extends StatefulWidget {
   final TabViewModel tabViewModel;
 
-  const TabComponent({super.key, required this.tabViewModel});
+  const TabComponent._({super.key, required this.tabViewModel});
 
   @override
   State<TabComponent> createState() => _TabComponentState();
+
+  static Widget instantiate({required TabViewModel tabViewModel}) {
+    return TabComponent._(tabViewModel: tabViewModel);
+  }
 }
 
 class _TabComponentState extends State<TabComponent>
-    with SingleTickerProviderStateMixin {
+  with SingleTickerProviderStateMixin {
   late TabController tabController;
 
   @override

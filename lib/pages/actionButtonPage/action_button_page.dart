@@ -21,7 +21,7 @@ class ActionButtonPage extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    ActionButton(viewModel: 
+                    ActionButton.instantiate(viewModel: 
                       ActionButtonViewModel(
                         size: ActionButtonSize.large,
                         style: ActionButtonStyle.primary,
@@ -30,7 +30,7 @@ class ActionButtonPage extends StatelessWidget {
                       )
                     ),
                     const SizedBox(height: 10,),
-                    ActionButton(viewModel: 
+                    ActionButton.instantiate(viewModel: 
                       ActionButtonViewModel(
                         size: ActionButtonSize.medium,
                         style: ActionButtonStyle.primary,
@@ -39,7 +39,7 @@ class ActionButtonPage extends StatelessWidget {
                       )
                     ),
                     const SizedBox(height: 10,),
-                    ActionButton(viewModel: 
+                    ActionButton.instantiate(viewModel: 
                       ActionButtonViewModel(
                         size: ActionButtonSize.small,
                         style: ActionButtonStyle.primary,
@@ -51,7 +51,7 @@ class ActionButtonPage extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    ActionButton(viewModel: 
+                    ActionButton.instantiate(viewModel: 
                       ActionButtonViewModel(
                         size: ActionButtonSize.large,
                         style: ActionButtonStyle.secondary,
@@ -61,7 +61,7 @@ class ActionButtonPage extends StatelessWidget {
                       )
                     ),
                     const SizedBox(height: 10,),
-                    ActionButton(viewModel: 
+                    ActionButton.instantiate(viewModel: 
                       ActionButtonViewModel(
                         size: ActionButtonSize.medium,
                         style: ActionButtonStyle.secondary,
@@ -71,7 +71,7 @@ class ActionButtonPage extends StatelessWidget {
                       )
                     ),
                     const SizedBox(height: 10,),
-                    ActionButton(viewModel: 
+                    ActionButton.instantiate(viewModel: 
                       ActionButtonViewModel(
                         size: ActionButtonSize.small,
                         style: ActionButtonStyle.secondary,
@@ -84,7 +84,7 @@ class ActionButtonPage extends StatelessWidget {
                 ),
                 Column(
                   children: [
-                    ActionButton(viewModel: 
+                    ActionButton.instantiate(viewModel: 
                       ActionButtonViewModel(
                         size: ActionButtonSize.large,
                         style: ActionButtonStyle.tertiary,
@@ -93,7 +93,7 @@ class ActionButtonPage extends StatelessWidget {
                       )
                     ),
                     const SizedBox(height: 10,),
-                    ActionButton(viewModel: 
+                    ActionButton.instantiate(viewModel: 
                       ActionButtonViewModel(
                         size: ActionButtonSize.medium,
                         style: ActionButtonStyle.tertiary,
@@ -103,7 +103,7 @@ class ActionButtonPage extends StatelessWidget {
                       )
                     ),
                     const SizedBox(height: 10,),
-                    ActionButton(viewModel: 
+                    ActionButton.instantiate(viewModel: 
                       ActionButtonViewModel(
                         size: ActionButtonSize.small,
                         style: ActionButtonStyle.tertiary,
