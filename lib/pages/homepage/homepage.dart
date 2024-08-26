@@ -20,7 +20,7 @@ class MyHomePage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text("Buttons page"),
-            ActionButton(viewModel: 
+            ActionButton.instantiate(viewModel: 
               ActionButtonViewModel(
                 size: ActionButtonSize.large,
                 style: ActionButtonStyle.primary,
@@ -37,7 +37,7 @@ class MyHomePage extends StatelessWidget {
             ),
             const SizedBox(height: 20,),
             const Text("Input Field page"),
-            ActionButton(viewModel: 
+            ActionButton.instantiate(viewModel: 
               ActionButtonViewModel(
                 size: ActionButtonSize.large,
                 style: ActionButtonStyle.primary,
@@ -54,7 +54,7 @@ class MyHomePage extends StatelessWidget {
             ),
             const SizedBox(height: 20,),
             const Text("Tab Component page"),
-            ActionButton(viewModel: 
+            ActionButton.instantiate(viewModel: 
               ActionButtonViewModel(
                 size: ActionButtonSize.large,
                 style: ActionButtonStyle.primary,

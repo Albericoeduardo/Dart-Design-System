@@ -6,7 +6,11 @@ import 'package:input_text/shared/styles.dart';
 class ActionButton extends StatelessWidget {
   final ActionButtonViewModel viewModel;
 
-  const ActionButton({super.key, required this.viewModel});
+  const ActionButton._({super.key, required this.viewModel});
+
+  static Widget instantiate({required ActionButtonViewModel viewModel}) {
+    return ActionButton._(viewModel: viewModel);
+  }
 
   @override
   Widget build(BuildContext context) {
