@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:input_text/DesignSystem/BottomTabBar/bottom_tab_bar_view_model.dart';
+import 'package:input_text/shared/colors.dart';
 
 class BottomTabBar extends StatelessWidget {
   final BottomTabBarViewModel viewModel;
@@ -14,6 +15,10 @@ class BottomTabBar extends StatelessWidget {
           label: tab['label'] as String,
         );
       }).toList(),
+      type: BottomNavigationBarType.fixed,
+      selectedItemColor: darkPrimaryBrandColor,
+      unselectedItemColor: lightPrimaryBaseColorLight,
+      showUnselectedLabels: true,
       currentIndex: viewModel.initialIndex,
       onTap: viewModel.onIndexChanged,
     );
