@@ -64,7 +64,5 @@ const Color regularMaterialColorDark = Color.fromARGB(175, 24, 24, 24);
 const Color thinMaterialColorDark = Color.fromARGB(162, 17, 17, 17);
 const Color ultrathinMaterialColorDark = Color.fromARGB(112, 42, 42, 42);
 
-
-
 //Shadow Colors
 //todo: add shadow colors

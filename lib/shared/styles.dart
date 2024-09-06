@@ -131,29 +131,3 @@ const TextStyle navbarLargeTitle = TextStyle(
   fontWeight: FontWeight.w700,
   color: normalPrimaryBaseColorLight,
 );
-
-
-//no
-const TextStyle headlineStyle = TextStyle(
-  fontSize: 30,
-  fontWeight: FontWeight.w700,
-  color: normalPrimaryBaseColorLight,
-);
-
-const TextStyle bodyStyle = TextStyle(
-  fontSize: 16,
-  fontWeight: FontWeight.w400,
-  color: normalPrimaryBaseColorLight,
-);
-
-
-const TextStyle subheadingStyle = TextStyle(
-  fontSize: 20,
-  fontWeight: FontWeight.w400,
-  color: normalPrimaryBaseColorLight,
-);
-
-const TextStyle captionStyle = TextStyle(
-  fontSize: 12,
-  color: normalPrimaryBaseColorLight,  fontWeight: FontWeight.w400,
-);
