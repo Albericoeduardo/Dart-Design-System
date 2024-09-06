@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:input_text/DesignSystem/tab/tab_view_model.dart';
+import 'package:input_text/DesignSystem/Tab/tab_view_model.dart';
 import 'package:input_text/shared/colors.dart';
 
 class TabComponent extends StatefulWidget {
