@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:input_text/DesignSystem/LinkedLabel/linked_label.dart';
-import 'package:input_text/DesignSystem/LinkedLabel/linked_label_view_model.dart';
+import 'package:input_text/Components/LinkedLabel/linked_label.dart';
+import 'package:input_text/Components/LinkedLabel/linked_label_view_model.dart';
 
 class LinkedLabelPage extends StatelessWidget {
   const LinkedLabelPage({super.key});

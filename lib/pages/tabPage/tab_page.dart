@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:input_text/DesignSystem/Tab/tab.dart';
-import 'package:input_text/DesignSystem/Tab/tab_view_model.dart';
+import 'package:input_text/Components/Tab/tab.dart';
+import 'package:input_text/Components/Tab/tab_view_model.dart';
 
 class TabPage extends StatelessWidget {
   const TabPage({super.key});

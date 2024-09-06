@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:input_text/DesignSystem/Buttons/ActionButton/action_button.dart';
-import 'package:input_text/DesignSystem/Buttons/ActionButton/action_button_view_model.dart';
+import 'package:input_text/Components/Buttons/ActionButton/action_button.dart';
+import 'package:input_text/Components/Buttons/ActionButton/action_button_view_model.dart';
 import 'package:input_text/pages/actionButtonPage/action_button_page.dart';
 import 'package:input_text/pages/bottomTabBarPage/bottom_tab_bar_page.dart';
 import 'package:input_text/pages/inputFieldPage/input_field_page.dart';

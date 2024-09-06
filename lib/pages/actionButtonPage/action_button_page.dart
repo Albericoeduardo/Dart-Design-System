@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:input_text/DesignSystem/Buttons/ActionButton/action_button.dart';
-import 'package:input_text/DesignSystem/Buttons/ActionButton/action_button_view_model.dart';
+import 'package:input_text/Components/Buttons/ActionButton/action_button.dart';
+import 'package:input_text/Components/Buttons/ActionButton/action_button_view_model.dart';
 
 class ActionButtonPage extends StatelessWidget {
   const ActionButtonPage({super.key});
