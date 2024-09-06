@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:input_text/DesignSystem/Buttons/ActionButton/action_button.dart';
 import 'package:input_text/DesignSystem/Buttons/ActionButton/action_button_view_model.dart';
 import 'package:input_text/pages/actionButtonPage/action_button_page.dart';
+import 'package:input_text/pages/bottomTabBarPage/bottom_tab_bar_page.dart';
 import 'package:input_text/pages/inputFieldPage/input_field_page.dart';
 import 'package:input_text/pages/linkedLabelPage/linked_label_page.dart';
 import 'package:input_text/pages/tabPage/tab_page.dart';
@@ -82,6 +83,23 @@ class MyHomePage extends StatelessWidget {
                   Navigator.push(
                     context,
                     MaterialPageRoute(builder: (context) => const LinkedLabelPage()
+                    )
+                  );
+                }
+              )
+            ),
+            const SizedBox(height: 20,),
+            const Text("Bottom tab bar page"),
+            ActionButton.instantiate(viewModel: 
+              ActionButtonViewModel(
+                size: ActionButtonSize.large,
+                style: ActionButtonStyle.primary,
+                text: 'Bottom Tab Bar',
+                icon: Icons.navigate_next_outlined,
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const BottomTabBarPage()
                     )
                   );
                 }
