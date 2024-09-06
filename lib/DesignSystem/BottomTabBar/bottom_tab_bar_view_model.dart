@@ -2,9 +2,14 @@ import 'package:flutter/material.dart';
 
 const bottomTabs = [
   {
-    "index": "1",
+    "index": "0",
     "label": "Home",
     IconData: Icons.home
+  },
+  {
+    "index": "1",
+    "label": "Messages",
+    IconData: Icons.messenger
   },
   {
     "index": "2",
@@ -13,13 +18,8 @@ const bottomTabs = [
   },
   {
     "index": "3",
-    "label": "Label",
-    IconData: Icons.label
-  },
-  {
-    "index": "4",
-    "label": "Label",
-    IconData: Icons.label
+    "label": "Profile",
+    IconData: Icons.person
   },
 ];
 
