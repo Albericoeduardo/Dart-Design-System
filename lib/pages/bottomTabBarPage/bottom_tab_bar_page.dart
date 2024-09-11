@@ -25,9 +25,27 @@ class _BottomTabBarPageState extends State<BottomTabBarPage> {
         title: const Text('Bottom Tab Bar Page'),
       ),
       body: pages[actualIndex],
-      bottomNavigationBar: BottomTabBar(
+      bottomNavigationBar: BottomTabBar.instantiate(
         viewModel: BottomTabBarViewModel(
-          initialIndex: actualIndex,
+          bottomTabs: [
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.home),
+              label: "Home"
+            ),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.message),
+              label: "Messages"
+            ),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.label),
+              label: "Label"
+            ),
+            const BottomNavigationBarItem(
+              icon: Icon(Icons.label),
+              label: "Label"
+            )
+          ],
+          //todo: implement pagination on index change with pages list
           onIndexChanged: (index) {
             setState(() {
               actualIndex = index;

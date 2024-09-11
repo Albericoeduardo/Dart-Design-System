@@ -1,21 +1,12 @@
-const tabNames = [
-  {
-    "index": "1",
-    "tab": "message1"
-  },
-  {
-    "index": "2",
-    "tab": "message2"
-  },
-  {
-    "index": "3",
-    "tab": "message3"
-  },
-];
+import 'package:flutter/material.dart';
 
 class TabViewModel {
+  final List<Tab> tabs;
   final Function(int)? onIndexChanged;
   final int initialIndex;
 
-  TabViewModel({required this.initialIndex, this.onIndexChanged});
+  TabViewModel({
+    required this.initialIndex,
+    required this.tabs, 
+    this.onIndexChanged});
 }

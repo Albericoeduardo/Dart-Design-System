@@ -16,14 +16,14 @@ class TabComponent extends StatefulWidget {
 }
 
 class _TabComponentState extends State<TabComponent>
-  with SingleTickerProviderStateMixin {
+    with SingleTickerProviderStateMixin {
   late TabController tabController;
 
   @override
   void initState() {
     super.initState();
     tabController = TabController(
-        length: tabNames.length,
+        length: widget.tabViewModel.tabs.length,
         vsync: this,
         initialIndex: widget.tabViewModel.initialIndex);
     tabController.addListener(handleTabChange);
@@ -48,23 +48,11 @@ class _TabComponentState extends State<TabComponent>
       children: [
         TabBar(
           controller: tabController,
-          tabs: tabNames.map((e) => Tab(
-            text: "Tab ${e['index']}"
-          )).toList(),
+          tabs: widget.tabViewModel.tabs,
           indicatorColor: lightPrimaryBrandColor,
           labelColor: lightPrimaryBrandColor,
           unselectedLabelColor: Colors.grey,
         ),
-        Expanded(
-          child: TabBarView(
-            controller: tabController,
-            children: tabNames.map((e) {
-              return Center(
-                child: Text((e['tab'] ?? 'Sem conteudis')),
-              );
-            }).toList(),
-          ),
-        )
       ],
     );
   }

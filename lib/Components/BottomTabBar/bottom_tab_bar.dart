@@ -4,22 +4,20 @@ import 'package:input_text/shared/colors.dart';
 
 class BottomTabBar extends StatelessWidget {
   final BottomTabBarViewModel viewModel;
-  const BottomTabBar({super.key, required this.viewModel});
+  const BottomTabBar._({super.key, required this.viewModel});
+
+  static Widget instantiate({required BottomTabBarViewModel viewModel}) {
+    return BottomTabBar._(viewModel: viewModel);
+  }
 
   @override
   Widget build(BuildContext context) {
     return BottomNavigationBar(
-      items: bottomTabs.map((tab) {
-        return BottomNavigationBarItem(
-          icon: Icon(tab[IconData] as IconData?),
-          label: tab['label'] as String,
-        );
-      }).toList(),
+      items: viewModel.bottomTabs,
       type: BottomNavigationBarType.fixed,
       selectedItemColor: darkPrimaryBrandColor,
       unselectedItemColor: lightPrimaryBaseColorLight,
       showUnselectedLabels: true,
-      currentIndex: viewModel.initialIndex,
       onTap: viewModel.onIndexChanged,
     );
   }

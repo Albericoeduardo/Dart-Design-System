@@ -13,7 +13,13 @@ class TabPage extends StatelessWidget {
       ),
       body: TabComponent.instantiate(
         tabViewModel: TabViewModel(
-          initialIndex: 0
+          tabs: [
+            const Tab(text: 'Home',),
+            const Tab(text: 'Messages',),
+            const Tab(text: 'Label',),
+            const Tab(text: 'Label',),
+          ],
+          initialIndex: 0,
         ),
       )
     );
