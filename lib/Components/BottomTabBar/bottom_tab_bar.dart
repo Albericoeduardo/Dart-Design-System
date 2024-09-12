@@ -4,10 +4,12 @@ import 'package:input_text/shared/colors.dart';
 
 class BottomTabBar extends StatelessWidget {
   final BottomTabBarViewModel viewModel;
-  const BottomTabBar._({super.key, required this.viewModel});
+  final int currentIndex;
 
-  static Widget instantiate({required BottomTabBarViewModel viewModel}) {
-    return BottomTabBar._(viewModel: viewModel);
+  const BottomTabBar._({super.key, required this.viewModel, required this.currentIndex}); // Atualizei aqui
+
+  static Widget instantiate({required BottomTabBarViewModel viewModel, required int currentIndex}) {
+    return BottomTabBar._(viewModel: viewModel, currentIndex: currentIndex); // Atualizei aqui
   }
 
   @override
@@ -18,6 +20,7 @@ class BottomTabBar extends StatelessWidget {
       selectedItemColor: darkPrimaryBrandColor,
       unselectedItemColor: lightPrimaryBaseColorLight,
       showUnselectedLabels: true,
+      currentIndex: currentIndex,
       onTap: viewModel.onIndexChanged,
     );
   }

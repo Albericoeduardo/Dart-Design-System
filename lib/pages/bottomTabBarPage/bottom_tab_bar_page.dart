@@ -11,6 +11,7 @@ class BottomTabBarPage extends StatefulWidget {
 
 class _BottomTabBarPageState extends State<BottomTabBarPage> {
   int actualIndex = 0;
+
   @override
   Widget build(BuildContext context) {
     final List<Widget> pages = [
@@ -30,28 +31,28 @@ class _BottomTabBarPageState extends State<BottomTabBarPage> {
           bottomTabs: [
             const BottomNavigationBarItem(
               icon: Icon(Icons.home),
-              label: "Home"
+              label: "Home",
             ),
             const BottomNavigationBarItem(
               icon: Icon(Icons.message),
-              label: "Messages"
+              label: "Messages",
             ),
             const BottomNavigationBarItem(
               icon: Icon(Icons.label),
-              label: "Label"
+              label: "Label",
             ),
             const BottomNavigationBarItem(
-              icon: Icon(Icons.label),
-              label: "Label"
+              icon: Icon(Icons.person),
+              label: "Profile",
             )
           ],
-          //todo: implement pagination on index change with pages list
           onIndexChanged: (index) {
             setState(() {
               actualIndex = index;
             });
           },
         ),
+        currentIndex: actualIndex,
       ),
     );
   }
